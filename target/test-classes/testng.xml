@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Next Suite">
+	<listeners>
+		<listener class-name="uk.co.next.qa.utilities.MyListeners"></listener>
+	</listeners>
+	<test thread-count="5" name="Next Project Test">
+		<classes>
+			<class name="uk.co.next.qa.test.LoginTest" />
+			<class name="uk.co.next.qa.test.SearchTest" />
+			<class name="uk.co.next.qa.test.PLPTest" />
+			<class name="uk.co.next.qa.test.PDPTest" />
+			<class name="uk.co.next.qa.test.ShoppingBagTest" />
+			<class name="uk.co.next.qa.test.DeliveryTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

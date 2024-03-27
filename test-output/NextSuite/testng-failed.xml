@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NextSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="uk.co.next.qa.utilities.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Group Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="uk.co.next.qa.test.LoginTest">
+        <methods>
+          <include name="verifyLoginWithValidCredentials"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- uk.co.next.qa.test.LoginTest -->
+      <class name="uk.co.next.qa.test.PLPTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyByClickingOnProduct"/>
+        </methods>
+      </class> <!-- uk.co.next.qa.test.PLPTest -->
+      <class name="uk.co.next.qa.test.DeliveryTest">
+        <methods>
+          <include name="verifyDateSelection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- uk.co.next.qa.test.DeliveryTest -->
+    </classes>
+  </test> <!-- Group Test(failed) -->
+</suite> <!-- Failed suite [NextSuite] -->
